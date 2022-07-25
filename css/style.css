@@ -7,6 +7,17 @@
     font-family: 'PT Sans', sans-serif;;
 }
 
+button {
+    width: fit-content;
+    padding: 15px;
+    color: white;
+    background-color: #0084fd;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 /* HEADER SECTION  */
 
 header {
@@ -28,12 +39,106 @@ header {
 
 .hc-sub i {
     color: white;
+    cursor: pointer;
+}
+
+.hc-sub img {
+    cursor: pointer;
 }
 
 /* MAIN SECTION */
 
+main {
+    padding-top: 10vh;
+}
+
     /* GET A DEMO SECTION */
 
+    .white {
+        padding: 5vh 0vh;
+    }
+
     .demosectioncontainer {
-        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ds-sub {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: #b5ddff;
+        border-radius: 25px;
+        margin: 30px;
+        line-height: 25px;
+    }
+
+    .ds-sub-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        background-color: #b5ddff;
+        border-radius: 25px;
+        margin: 30px;
+        line-height: 25px;
+    }
+
+    .ds-sub-centered p {
+        text-align: center;
+    }
+
+    .ds-sub-centered i {
+        color: #0084fd;
+    }
+
+    .ds-sub-centered div {
+        margin: 15px;
+    }
+
+    .ds-sub div {
+        margin: 15px;
+    }
+
+    .ds-sub div h3, .ds-sub-centered div h3 {
+        color: #0084fd;
+    }
+
+    .ds-sub-img {
+        width: 100%;
+    }
+
+    #ds-sub-imgbox {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 25px;
+        margin: 0;
+    }
+
+    .storebutton {
+        width: 83%;
+        font-size: large;
+    }
+
+    .fa-google-play {
+        margin-right: 5px;
+    }
+
+    /* STRATEGIC PLANNING SECTION */
+
+    .purple {
+        background-color: #9792e4;
+        padding: 5vh 0vh;
+    }
+
+    .sps-sub {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px 0px 25px;
+        background-color: #b5ddff;
+        border-radius: 25px;
+        margin: 30px;
+        width: 100%;
+        line-height: 25px;
     }
