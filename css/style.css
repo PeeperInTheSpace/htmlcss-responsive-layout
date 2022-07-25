@@ -18,6 +18,14 @@ button {
     cursor: pointer;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 /* HEADER SECTION  */
 
 header {
@@ -92,11 +100,7 @@ main {
         color: #0084fd;
     }
 
-    .ds-sub-centered div {
-        margin: 15px;
-    }
-
-    .ds-sub div {
+    .ds-sub div, .ds-sub-centered div {
         margin: 15px;
     }
 
@@ -108,11 +112,11 @@ main {
         width: 100%;
     }
 
-    #ds-sub-imgbox {
+    .ds-sub-imgbox {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 25px;
+        top: 40px;
         margin: 0;
     }
 
@@ -129,16 +133,107 @@ main {
 
     .purple {
         background-color: #9792e4;
-        padding: 5vh 0vh;
+        padding: 5vh 1vh;
+    }
+
+    .strategicplanningcontainer {
+        color: white;
     }
 
     .sps-sub {
         display: flex;
         flex-direction: column;
-        padding: 25px 25px 0px 25px;
-        background-color: #b5ddff;
         border-radius: 25px;
-        margin: 30px;
-        width: 100%;
+        margin: 20px;
         line-height: 25px;
+    }
+
+    #sps-sub-inside {
+        background-color: white;
+        color: black;
+        padding: 25px;
+    }
+
+    .sps-sub-imgbox {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .sps-sub-img {
+        width: 100%;
+    }
+
+    .fa-arrow-down {
+        color: black;
+    }
+
+    .arrowbutton {
+        border-radius: 100%;
+        padding: 12px 16px;
+        background-color: #9792e4;
+        margin: 0 auto;
+    }
+
+    /* TESTIMONIALS SECTION */
+
+    .testimonialscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ts-sub {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: #9792e4;
+        border-radius: 45px;
+        margin: 30px;
+        line-height: 25px;
+    }
+
+    .ts-sub div {
+        padding: 15px;
+        color: white;
+        text-align: center;
+    }
+
+    .blackp {
+        color: black;
+    }
+
+    .ts-sub p {
+        margin-bottom: 15px;
+    }
+
+    #ts-sub-main {
+        background-color: white;
+        text-align: center;
+    }
+
+    #ts-sub-main h2 {
+        color: #9792e4;
+        line-height: 30px;
+    }
+
+    #ts-sub-main p {
+        color: black;
+    }
+    
+    .ts-sub-imgbox {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .ts-sub-img {
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        right: 60px;
+        bottom: 15px;
     }
