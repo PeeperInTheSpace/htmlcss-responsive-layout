@@ -1,0 +1,31 @@
+/* GENERAL SETTINGS  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;;
+}
+
+/* HEADER SECTION  */
+
+header {
+    background-color: #0084fd;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 999;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hc-sub {
+    padding: 15px 25px;
+}
+
+.hc-sub i {
+    color: white;
+}
