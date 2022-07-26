@@ -26,12 +26,21 @@ h3 {
     font-size: 20px;
 }
 
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* HEADER SECTION  */
 
 header {
     background-color: #0084fd;
     width: 100%;
-    height: 10vh;
+    min-height: 100px;
+    line-height: 100px;
     position: fixed;
     z-index: 999;
 }
@@ -39,10 +48,14 @@ header {
 .headercontainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
 }
 
-.hc-sub {
-    padding: 15px 25px;
+header img,
+header .fa-bars {
+    vertical-align: middle;
 }
 
 .hc-sub i {
@@ -50,8 +63,35 @@ header {
     cursor: pointer;
 }
 
-.hc-sub img {
+.headercontainer div img {
     cursor: pointer;
+}
+
+.hc-sub ul {
+    display: none;
+}
+
+.getstartedbutton {
+    background-color: white;
+    color: black;
+}
+
+/* HEADER SECTION - RESPONSIVE  */
+
+@media screen and (min-width: 1200px) {
+
+    .hc-sub .fa-bars{
+      display: none;
+    }
+  
+    .hc-sub ul {
+      display: flex;
+    }
+  
+    .hc-sub li {
+      display: inline-block;
+    }
+
 }
 
 /* MAIN SECTION */
@@ -63,12 +103,14 @@ main {
     /* GET A DEMO SECTION */
 
     .white {
-        padding: 5vh 0vh;
+        padding: 10vh 0vh;
     }
 
     .demosectioncontainer {
         display: flex;
         flex-wrap: wrap;
+        padding: 0 30px;
+        width: 100%;
     }
 
     .ds-sub {
@@ -100,11 +142,13 @@ main {
         color: #0084fd;
     }
 
-    .ds-sub div, .ds-sub-centered div {
+    .ds-sub div, 
+    .ds-sub-centered div {
         margin: 15px;
     }
 
-    .ds-sub div h3, .ds-sub-centered div h3 {
+    .ds-sub div h3, 
+    .ds-sub-centered div h3 {
         color: #0084fd;
     }
 
@@ -129,6 +173,10 @@ main {
         margin-right: 5px;
     }
 
+    /* GET A DEMO SECTION - RESPONSIVE  */
+
+
+
     /* STRATEGIC PLANNING SECTION */
 
     .purple {
@@ -138,6 +186,8 @@ main {
 
     .strategicplanningcontainer {
         color: white;
+        padding: 0 30px;
+        width: 100%;
     }
 
     .sps-sub {
@@ -151,7 +201,7 @@ main {
     #sps-sub-inside {
         background-color: white;
         color: black;
-        padding: 25px;
+        padding: 0 30px;
     }
 
     .sps-sub-imgbox {
@@ -181,6 +231,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0 30px;
+        width: 100%;
     }
 
     .ts-sub {
@@ -220,22 +272,12 @@ main {
     #ts-sub-main p {
         color: black;
     }
-    
-    .ts-sub-imgbox {
-        margin: 0 auto;
-        margin-bottom: 10px;
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        overflow: hidden;
-    }
 
     .ts-sub-img {
-        margin: 0 auto;
-        position: relative;
         height: 200px;
-        right: 60px;
-        bottom: 15px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
     }
 
     /* BENEFITS SECTION */
@@ -244,6 +286,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
+        padding: 0 30px;
     }
 
     .bs-sub {
@@ -279,3 +323,6 @@ main {
         width: 50%;
         font-size: larger;
     }
+
+    /* ABOUT US SECTION */
+
