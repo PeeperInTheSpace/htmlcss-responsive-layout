@@ -308,7 +308,7 @@ main {
     }
 
     .bs-sub div {
-        padding: 15px;
+        padding: 15px 0px;
         color: #9792e4;
     }
 
@@ -326,3 +326,85 @@ main {
 
     /* ABOUT US SECTION */
 
+    .aboutusscontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .as-sub {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: white;
+        border-radius: 25px;
+        margin: 30px;
+        line-height: 25px;
+    }
+
+    .as-sub h2 {
+        color: #9792e4;
+        font-size: 30px;
+    }
+
+    .as-sub-img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    .as-sub div p,
+    .as-sub div h2 {
+        padding-bottom: 20px;
+        line-height: 35px;
+    }
+
+    .linkedinbutton {
+        background-color: #9792e4;
+        color: white;
+        padding: 10px;
+    }
+
+    .linkedinbutton i {
+        padding-right: 5px;
+    }
+
+    .floatingquote {
+        color: #9792e4;
+        font-size: 55px;
+        position: relative;
+        bottom: 75px;
+        right: 55px;
+    }
+
+    /* GET STARTED SECTION */
+
+    .getstartedcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0 30px;
+        color: white;
+    }
+
+    .gs-sub {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin: 30px;
+        line-height: 25px;
+    }
+
+    .biggetstartedbutton {
+        padding: 25px;
+        width: 100%;
+        color: #9792e4;
+        background-color: white;
+    }
+
+
+/* FOOTER SECTION */
