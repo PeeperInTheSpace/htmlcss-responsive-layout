@@ -116,7 +116,7 @@ main {
         width: 100%;
     }
 
-    .demosectioncontainer div {
+    .ds-sub-centered {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -125,6 +125,21 @@ main {
         border-radius: 25px;
         line-height: 25px;
         margin: 10px;
+    }
+
+    .ds-sub {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 40px 0px 40px;
+        background-color: #b5ddff;
+        border-radius: 25px;
+        line-height: 25px;
+        margin: 10px;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
     }
 
     .demosectioncontainer div h3, p {
@@ -162,7 +177,7 @@ main {
         margin-right: 15px;
     }
 
-    .ds-sub-img {
+    .ds-sub {
         position: relative;
     }
 
@@ -244,11 +259,13 @@ main {
     #ts-sub-main {
         background-color: white;
         text-align: center;
+        display: block;
     }
 
     #ts-sub-main h2 {
         color: #9792e4;
         line-height: 40px;
+        margin-bottom: 25px;
     }
 
     #ts-sub-main p {
@@ -296,6 +313,8 @@ main {
         border-radius: 25px;
         line-height: 25px;
         margin: 10px;
+        min-height: 150px;
+        max-width: 350px;
     }
 
     #bs-sub-main {
@@ -303,6 +322,7 @@ main {
         background-color: #9792e4;
         line-height: 50px;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     .bs-sub h1 {
@@ -385,6 +405,7 @@ main {
     .getstartedcontainer {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
         padding: 0 40px;
         color: white;
@@ -427,6 +448,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     width: 100%;
     padding: 0 40px;
     color: white;
@@ -454,6 +476,49 @@ footer {
         width: calc(100% / 3 * 2 - 20px);
     }
 
+    .ds-sub-img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        width: 50%;
+    } 
+
+    .ds-sub-calc {
+        width: calc(100% / 2);
+        margin: 0;
+    }
+
+    .sps-sub img {
+        width: 80%;
+    }
+
+    .sps-sub {
+        justify-content: center;
+    }
+
+    .ts-sub {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .ts-sub h3 {
+        margin-bottom: 0;
+    }
+
+    .bs-sub {
+        width: calc(100% / 2 - 20px);
+        margin: 10px;
+    }
+
+    .aboutuscontainer {
+        display: flex;
+    }
+
+    .as-sub {
+        width: calc(100% / 2);
+        margin: 0;
+    } 
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -471,9 +536,16 @@ footer {
     }
 
     .white,
-    .purple {
+    .purple,
+    footer {
         width: 100%;
         padding: 10vh 20vw;
+    }
+
+    
+    .ds-sub-calc {
+        width: calc(100% / 2);
+        margin: 0;
     }
 
     .sps-sub {
@@ -492,6 +564,18 @@ footer {
     #sps-sub-inside {
         max-height: 620px;
     }
+
+    .bs-sub {
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+
+    .ds-sub-img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        width: 50%;
+    }   
 
 }
 
