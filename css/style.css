@@ -19,15 +19,15 @@ button {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 img {
@@ -89,23 +89,7 @@ header .fa-bars {
     color:#0084fd;
 }
 
-/* HEADER SECTION - RESPONSIVE  */
 
-@media screen and (min-width: 1200px) {
-
-    .hc-sub .fa-bars{
-      display: none;
-    }
-  
-    .hc-sub ul {
-      display: flex;
-    }
-  
-    .hc-sub li {
-      display: inline-block;
-    }
-
-}
 
 /* MAIN SECTION */
 
@@ -113,11 +97,17 @@ main {
     padding-top: 10vh;
 }
 
-    /* GET A DEMO SECTION */
 
-    .white {
-        padding: 10vh 0vh;
-    }
+.purple {
+    background-color: #9792e4;
+    padding: 5vh 1vh;
+}
+
+.white {
+    padding: 10vh 0vh;
+}
+
+    /* GET A DEMO SECTION */
 
     .demosectioncontainer {
         display: flex;
@@ -176,23 +166,7 @@ main {
         position: relative;
     }
 
-    /* GET A DEMO SECTION - RESPONSIVE  */
-
-    @media screen and (min-width: 768px){
-
-        .strategicplanningcontainer {
-          width: calc(100% / 3);
-          padding: 0 10px;
-        }  
-
-    }
-
     /* STRATEGIC PLANNING SECTION */
-
-    .purple {
-        background-color: #9792e4;
-        padding: 5vh 1vh;
-    }
 
     .strategicplanningcontainer {
         color: white;
@@ -228,11 +202,12 @@ main {
 
     .fa-arrow-down {
         color: black;
+        padding: 10px;
     }
 
     .arrowbutton {
         border-radius: 100%;
-        padding: 12px 16px;
+        padding: 10px 10px;
         background-color: #9792e4;
         margin: 0 auto;
         margin-bottom: 25px;
@@ -465,3 +440,58 @@ footer {
 .purplelink {
     color: #9792e4;
 }
+
+/* RESPONSIVE SECTION */
+
+@media screen and (min-width: 768px) {
+
+    .demosectioncontainer .ds-sub, 
+    .demosectioncontainer .ds-sub-centered {
+      width: calc(100% / 3 - 20px);
+    }  
+
+    .demosectioncontainer .ds-sub {
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .hc-sub .fa-bars{
+      display: none;
+    }
+  
+    .hc-sub ul {
+      display: flex;
+    }
+  
+    .hc-sub li {
+      display: inline-block;
+    }
+
+    .white,
+    .purple {
+        width: 100%;
+        padding: 10vh 20vw;
+    }
+
+    .sps-sub {
+        width: calc(100% / 2);
+        margin: 10px;
+    }
+
+    .strategicplanningcontainer {
+        display: flex;
+    }
+
+    .firstimg {
+        margin-bottom: 40px;
+    }
+
+    #sps-sub-inside {
+        max-height: 620px;
+    }
+
+}
+
